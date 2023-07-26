@@ -1,0 +1,8 @@
+.header {
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: var(--gap-space-default);
+    padding: 16px;
+}

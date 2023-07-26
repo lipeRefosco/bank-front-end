@@ -1,0 +1,6 @@
+<div class="cards">
+    <app-card-front class="card" [name]="accountData.name"
+                    [account]="accountData.account"
+                    [card]="accountData.card" />
+    <app-card-back class="card" [balance]="accountData.account.balance" [limit]="accountData.account.limit" />
+</div>

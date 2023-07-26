@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --main-color: red;
+    --shadow-color: rgba(65, 7, 7, 0.3);
+    --gap-space-default: 16px;
+    
+    /* CARD */
+    --card-format: 16 * 9;
+    --card-width: 450px;
+    --card-height: calc(var(--card-width) / var(--card-format));
+    --double-card-limit-width: calc(var(--card-width) * 2 + var(--gap-space-default));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}

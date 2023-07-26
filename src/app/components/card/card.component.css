@@ -1,0 +1,38 @@
+.cards {
+    max-width: 1000px;
+    min-width: var(--card-width);
+    display: flex;
+    justify-content: center;
+    column-gap: var(--gap-space-default);
+    row-gap: var(--gap-space-default);
+    flex-wrap: wrap;
+}
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    display: block;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+/* vars from root: double-card-limit-width */
+@media only screen and (max-width: 916px) {
+    .cards {
+        position: relative;
+    }
+
+    .card {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    app-card-back.card{
+        opacity: 0;
+        transition: opacity 250ms;
+    }
+
+    app-card-back.card:hover{
+        opacity: 1;
+    }
+}

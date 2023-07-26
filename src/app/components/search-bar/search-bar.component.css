@@ -1,0 +1,40 @@
+:host {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 150px;
+}
+
+.search-bar {
+    width: inherit;
+    position: relative;
+}
+
+.search-bar input {
+    width: inherit;
+    padding: 16px 12px;
+    border-radius: 5px;
+    border: transparent;
+    transition: box-shadow 300ms;
+    outline: none;
+}
+
+.search-bar input:focus {
+    box-shadow: 0px 0px 18px rgb(119, 15, 15);
+}
+
+.search-bar button {
+    height: 100%;
+    padding: 0 16px;
+    right: 0;
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    
+
+    /* DEBUG */
+    opacity: 50%;
+}
+
+.search-bar button:hover {
+    cursor: pointer;
+}
